@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boarding Page</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section with Two Backgrounds</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Optional: Additional custom styles can be added here */
+    </style>
 </head>
-<body class="font-sans">
+<body>
 
-<div id="boardingContent" class="fixed inset-0 flex justify-center items-center bg-whitez-20">
-  <div class="bg-white p-8 rounded shadow-lg">
-    <h2 class="text-xl font-bold mb-4">Boarding Content</h2>
-    <form id="boardingForm">
-      <!-- Add your form fields here -->
-      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
-    </form>
+<div class="relative overflow-hidden">
+  <div class="absolute inset-0 bg-fixed bg-cover z-10" style="background-image: url('../public/images/silluette.jpg');"></div>
+  <div class="relative z-20">
+    <!-- Content of your section goes here -->
+    <div class="bg-white p-8">
+      <!-- Your content -->
+      <h1 class="text-3xl font-bold">Section with Two Backgrounds</h1>
+      <p>This is an example of a section with two backgrounds using Tailwind CSS.</p>
+    </div>
   </div>
+  <div class="absolute inset-0 bg-fixed bg-cover z-0" style="background-image: url('../public/images/interior-sephia-cropped-transparent.png');"></div>
 </div>
-
-<div id="newContent" class="relative z-0 h-screen hidden">
-  <!-- New content goes here -->
-  <div class="container mx-auto py-8">
-    <h1 class="text-3xl font-bold mb-4">New Content</h1>
-    <p>This content appears after submitting the form.</p>
-    <!-- Insert more content here -->
-  </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $('#boardingForm').submit(function(event) {
-      event.preventDefault(); // Prevent form submission
-      $('#boardingContent').hide();
-      $('#newContent').show();
-    });
-  });
-</script>
 
 </body>
 </html>
