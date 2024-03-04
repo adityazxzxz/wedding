@@ -747,6 +747,14 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/images\/interior-sephia-cropped-v2\.pn\'\)\2c url\(\'\.\.\/images\/hogwarts\.jpg\'\)\] {
+  background-image: url('../images/interior-sephia-cropped-v2.pn'),url('../images/hogwarts.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/interior-sephia-cropped-v2\.png\'\)\2c url\(\'\.\.\/images\/hogwartss\.jpg\'\)\] {
+  background-image: url('../images/interior-sephia-cropped-v2.png'),url('../images/hogwartss.jpg');
+}
+
 .from-gold-300 {
   --tw-gradient-from: #d2ab67 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(210 171 103 / 0) var(--tw-gradient-to-position);
