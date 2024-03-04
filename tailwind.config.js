@@ -7,6 +7,17 @@ module.exports = {
       padding: '50px'
     },
     extend: {
+      keyframes: {
+        fadein: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
+        }
+      },
+      animation: {
+        'fadein_1s': 'fadein 1s',
+        'fadein_2s': 'fadein 2s',
+        'fadein_3s': 'fadein 3s',
+      },
       fontFamily: {
         'custom1': ['custom1', 'sans-serif'],
         'custom2': ['custom2', 'sans-serif'],

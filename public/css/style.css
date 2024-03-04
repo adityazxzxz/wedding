@@ -628,10 +628,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -704,10 +700,6 @@ video {
   overflow-y: hidden;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -728,11 +720,6 @@ video {
   border-width: 1px;
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -748,34 +735,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\/images\/interior-sephia-cropped-transparent\.png\'\)\] {
-  background-image: url('./images/interior-sephia-cropped-transparent.png');
+.bg-\[url\(\'\.\.\/images\/interior-sephia-cropped-v2\.png\'\)\2c url\(\'\.\.\/images\/hogwarts\.jpg\'\)\] {
+  background-image: url('../images/interior-sephia-cropped-v2.png'),url('../images/hogwarts.jpg');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\.\/images\/interior-sephia-cropped-transparent\.png\'\)\] {
-  background-image: url('../images/interior-sephia-cropped-transparent.png');
-}
-
-.bg-\[url\(\'\.\.\/images\/silluette\.jpg\'\)\] {
-  background-image: url('../images/silluette.jpg');
 }
 
 .from-gold-300 {
@@ -841,11 +810,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -874,10 +838,6 @@ video {
   font-family: custom2, sans-serif;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-saudagar {
   font-family: Saudagar, sans-serif;
 }
@@ -900,11 +860,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -938,10 +893,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-60 {
-  opacity: 0.6;
 }
 
 .shadow-lg {
@@ -996,14 +947,27 @@ video {
   src: local('Aerotis'), url(../fonts/Aerotis.woff2) format('woff2');
 }
 
+@keyframes alt-pop-enter {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.enter_2 {
+  animation: alt-pop-enter 2s;
+}
+
+.enter_5 {
+  animation: alt-pop-enter 5s;
+}
+
 .hover\:-translate-y-3:hover {
   --tw-translate-y: -0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:bg-blue-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {

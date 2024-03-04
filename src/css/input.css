@@ -26,3 +26,20 @@
     font-family: 'Aerotis';
     src: local('Aerotis'), url(../fonts/Aerotis.woff2) format('woff2');
   }
+
+  @keyframes alt-pop-enter {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .enter_2 {
+    animation: alt-pop-enter 2s;
+  }
+
+  .enter_5 {
+    animation: alt-pop-enter 5s;
+  }

@@ -14,30 +14,28 @@
 </head>
 
 <body class="overflow-y-hidden">
-    <div style="background-image: url('../public/images/silluette.jpg');"></div>
-    <section id="boarding" class="bg-[url('../images/interior-sephia-cropped-transparent.png')] bg-cover bg-center fixed inset-0 flex justify-center items-center pt-3 pb-32 bg-slate-100 z-10">
-        <div class="z-20 bg-[url('../images/interior-sephia-cropped-transparent.png')] bg-cover bg-center "></div>
-        <div class="flex items-center justify-center h-screen w-screen max-w-screen-lg">
-            <div class="container">
-                <div class="border rounded-lg shadow-lg p-10 md:px-9 text-center bg-white bg-opacity-50">
-                    <h2 class="text-sm font-semibold font-custom1 text-lime-900 mb-5 lg:text-lg ">WEDDING</h2>
-                    <h2 class="font-custom2 text-lime-900 mb-10 text-3xl md:text-5xl ">Tiger & Milly</h2>
-                    <div class="flex flex-wrap p-5 justify-center">
-                        <button id="show"
-                        class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3"><span class="text-xs md:text-sm">VIEW INVITATION</span></button>
+        <section id="boarding" class="bg-[url('../images/interior-sephia-cropped-v2.png'),url('../images/hogwarts.jpg')] bg-cover bg-center fixed inset-0 flex justify-center items-center pt-3 pb-32 bg-slate-100 z-10">
+            <div class="flex items-center justify-center h-screen w-screen max-w-screen-lg">
+                <div class="container">
+                    <div class="border rounded-lg shadow-lg p-10 md:px-9 text-center bg-white bg-opacity-50 enter_2">
+                        <h2 class="text-sm font-semibold font-custom1 text-lime-900 mb-5 lg:text-lg ">WEDDING</h2>
+                        <h2 class="font-custom2 text-lime-900 mb-10 text-3xl md:text-5xl ">Tiger & Milly</h2>
+                        <div class="flex flex-wrap p-5 justify-center">
+                            <button id="show"
+                            class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3"><span class="text-xs md:text-sm">VIEW INVITATION</span></button>
+                        </div>
+                        <!-- <iframe src="https://lottie.host/embed/946fe320-e4ab-47ad-9b24-0ccb129e2242/Cito4u3efM.json"></iframe> -->
                     </div>
-                    <!-- <iframe src="https://lottie.host/embed/946fe320-e4ab-47ad-9b24-0ccb129e2242/Cito4u3efM.json"></iframe> -->
                 </div>
-            </div>
-        </div>
-        
     </section>
+    </div>
+    
 
     <section id="title" class=" bg-slate-100">
         <div class="flex items-center justify-center h-screen">
             <div class="container">
                 <div class="w-full px-4">
-                    <div class="max-w-xl mx-auto my-auto text-center mb-16 text-lime-900">
+                    <div id="text-title" class="max-w-xl mx-auto my-auto text-center mb-16 text-lime-900 hidden">
                         <h2 class="font-custom1 font-semibold mb-5 ">PERNIKAHAN</h2>
                         <h2 class="font-custom2 text-4xl mb-5 lg:text-7xl">Tiger</h2>
                         <h2 class=" mb-5"><span class="font-saudagar text-3xl">&</span></h2>
@@ -94,9 +92,12 @@
     </section>
     <script>
         const body = document.querySelector('body')
-      document.getElementById('show').addEventListener('click',function(){
-        document.getElementById('boarding').classList.toggle('hidden')
-        body.classList.toggle('overflow-y-hidden')
+        const text_title = document.querySelector('#text-title')
+        document.getElementById('show').addEventListener('click',function(){
+            document.getElementById('boarding').classList.toggle('hidden')
+            text_title.classList.toggle('hidden')
+            text_title.classList.toggle('enter_5')
+            body.classList.toggle('overflow-y-hidden')
       })
     </script>
 </body>
