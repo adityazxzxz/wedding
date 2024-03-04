@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        * {
-            /* border:red solid 1px */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="w-full px-4">
                     <div id="text-title" class="max-w-xl mx-auto my-auto text-center mb-16 text-lime-900 hidden">
-                        <h2 class="font-custom1 font-semibold mb-5 ">PERNIKAHAN</h2>
+                        <h2 class="font-custom1 font-semibold mb-5 ">OUR WEDDING</h2>
                         <h2 class="font-custom2 text-4xl mb-5 lg:text-7xl">Tiger</h2>
                         <h2 class=" mb-5"><span class="font-saudagar text-3xl">&</span></h2>
                         <h2 class="font-custom2 text-4xl mb-8 lg:text-7xl">Milly</h2>
@@ -91,15 +91,26 @@
         </div>
     </section>
     <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
         const body = document.querySelector('body')
         const text_title = document.querySelector('#text-title')
+        const boarding = document.querySelector('#boarding')
         document.getElementById('show').addEventListener('click',function(){
-            document.getElementById('boarding').classList.toggle('hidden')
-            text_title.classList.toggle('hidden')
-            text_title.classList.toggle('enter_5')
-            body.classList.toggle('overflow-y-hidden')
+            boarding.classList.toggle('exit_1')
+            sleep(1000).then(() => { 
+                boarding.classList.toggle('hidden') 
+                text_title.classList.toggle('hidden')
+                text_title.classList.toggle('enter_5')
+                document.getElementById('audio_player').play()
+                body.classList.toggle('overflow-y-hidden')
+            });
+            
       })
     </script>
+    <audio id="audio_player" loop src="sound/potter_waltz.mp3" type="audio/mpeg">
+    </audio>
 </body>
 
 </html>

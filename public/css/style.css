@@ -957,12 +957,26 @@ video {
   }
 }
 
+@keyframes alt-pop-exit {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .enter_2 {
   animation: alt-pop-enter 2s;
 }
 
 .enter_5 {
   animation: alt-pop-enter 5s;
+}
+
+.exit_1 {
+  animation: alt-pop-exit 1s;
 }
 
 .hover\:-translate-y-3:hover {
