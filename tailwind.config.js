@@ -23,7 +23,8 @@ module.exports = {
         'custom2': ['custom2', 'sans-serif'],
         'custom3': ['custom3', 'sans-serif'],
         'saudagar': ['Saudagar', 'sans-serif'],
-        'aerotis': ['Aerotis', 'sans-serif']
+        'aerotis': ['Aerotis', 'sans-serif'],
+        'forum': ['Forum', 'sans-serif']
       },
       colors: {
         gold: {

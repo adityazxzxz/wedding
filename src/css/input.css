@@ -27,6 +27,11 @@
     src: local('Aerotis'), url(../fonts/Aerotis.woff2) format('woff2');
   }
 
+  @font-face {
+    font-family: 'Forum';
+    src: local('Forum'), url(../fonts/Forum.woff2) format('woff2');
+  }
+
   @keyframes alt-pop-enter {
     0% {
       opacity: 0;
