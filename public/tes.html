@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Section with Two Backgrounds</title>
-    <!-- Include Tailwind CSS -->
+    <title>Multiple Sliders with Swiper.js and Tailwind CSS</title>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Optional: Additional custom styles can be added here */
+        /* Additional Tailwind styling can be added here */
     </style>
 </head>
+
 <body>
 
-<div class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-fixed bg-cover z-10" style="background-image: url('../public/images/silluette.jpg');"></div>
-  <div class="relative z-20">
-    <!-- Content of your section goes here -->
-    <div class="bg-white p-8">
-      <!-- Your content -->
-      <h1 class="text-3xl font-bold">Section with Two Backgrounds</h1>
-      <p>This is an example of a section with two backgrounds using Tailwind CSS.</p>
+    <!-- First Slider -->
+    <div class="swiper-container my-8">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
-  </div>
-  <div class="absolute inset-0 bg-fixed bg-cover z-0" style="background-image: url('../public/images/interior-sephia-cropped-transparent.png');"></div>
-</div>
 
+    <!-- Second Slider -->
+    <div class="swiper-container my-8">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide A</div>
+            <div class="swiper-slide">Slide B</div>
+            <div class="swiper-slide">Slide C</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // Initialize Swiper instances for each slider
+        const sliders = document.querySelectorAll('.swiper-container');
+
+        sliders.forEach(slider => {
+            new Swiper(slider, {
+                loop: true,
+                autoplay: {
+                    delay: 3000, // Change autoplay delay as needed
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
 </body>
+
 </html>
