@@ -25,8 +25,8 @@
     </style>
 </head>
 
-<body classs="overflow-y-hidden">
-        <!-- <section id="boarding" class="bg-[url('../images/interior-sephia-cropped-v2.png'),url('../images/hogwarts.jpg')] bg-cover bg-center fixed inset-0 flex justify-center items-center pt-3 pb-32 bg-slate-100 z-10">
+<body class="overflow-y-hidden">
+        <section id="boarding" class="bg-[url('../images/interior-sephia-cropped-v2.png'),url('../images/hogwarts.jpg')] bg-cover bg-center fixed inset-0 flex justify-center items-center pt-3 pb-32 bg-slate-100 z-10">
             <div class="flex items-center justify-center h-screen w-screen max-w-screen-lg">
                 <div class="container">
                     <div class="border rounded-lg shadow-lg p-10 md:px-9 text-center bg-white bg-opacity-50 enter_2">
@@ -36,10 +36,10 @@
                             <button id="show"
                             class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3"><span class="text-xs md:text-sm">VIEW INVITATION</span></button>
                         </div>
-                        <iframe src="https://lottie.host/embed/946fe320-e4ab-47ad-9b24-0ccb129e2242/Cito4u3efM.json" class="text-center"></iframe>
+                        <!-- <iframe src="https://lottie.host/embed/946fe320-e4ab-47ad-9b24-0ccb129e2242/Cito4u3efM.json" class="text-center"></iframe> -->
                     </div>
                 </div>
-        </section> -->
+        </section>
     </div>
     
 
@@ -180,22 +180,24 @@
     </div>
 </section>
 <section id="gallery">
-    <!-- First Slider -->
+    <div class="px-20 lg:w-1/2">
+        <!-- First Slider -->
     <div class="relative my-8">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="images/landscape.jpeg" alt=""></div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide"><img src="images/landscape.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="images/landscape.jpeg" alt=""></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev absolute left-0 top-0 mt-4"></div>
             <div class="swiper-button-next absolute right-0 top-0 mt-4"></div>
         </div>
     </div>
+</div>
 
     <!-- Second Slider -->
-    <div class="relative my-8">
+    <!-- <div class="relative my-8">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">Slide A</div>
@@ -206,7 +208,8 @@
             <div class="swiper-button-prev absolute left-0 top-0 mt-4"></div>
             <div class="swiper-button-next absolute right-0 top-0 mt-4"></div>
         </div>
-    </div>
+    </div> -->
+    
 </section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
