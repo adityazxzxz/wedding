@@ -662,6 +662,10 @@ video {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-\[480px\] {
   min-height: 480px;
 }
@@ -680,6 +684,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-4xl {
@@ -734,6 +742,11 @@ video {
   border-width: 1px;
 }
 
+.border-e-red-50 {
+  --tw-border-opacity: 1;
+  border-inline-end-color: rgb(254 242 242 / var(--tw-border-opacity));
+}
+
 .bg-lime-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(217 249 157 / var(--tw-bg-opacity));
@@ -759,8 +772,29 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .bg-\[url\(\'\.\.\/images\/interior-sephia-cropped-v2\.png\'\)\2c url\(\'\.\.\/images\/hogwarts\.jpg\'\)\] {
