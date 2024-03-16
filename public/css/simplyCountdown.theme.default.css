@@ -1,7 +1,8 @@
 .simply-countdown {
   overflow: hidden;
   display: table;
-  font-family: "Arial", sans-serif;
+  font-family: "Forum", sans-serif;
+  font-weight: 900;
   margin: auto;
 }
 .simply-countdown > .simply-section {
@@ -23,6 +24,7 @@
   display: block;
   text-align: center;
   font-size: 0.6rem;
+  font-style: italic;
 }
 
 .simply-countdown > .simply-section .simply-amount {
