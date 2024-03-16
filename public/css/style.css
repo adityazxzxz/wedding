@@ -586,37 +586,12 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
 .inset-0 {
   inset: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .z-10 {
   z-index: 10;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mx-auto {
@@ -667,8 +642,8 @@ video {
   margin-top: 7rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -677,10 +652,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .h-9 {
@@ -693,10 +664,6 @@ video {
 
 .min-h-\[480px\] {
   min-height: 480px;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-9 {
@@ -715,8 +682,16 @@ video {
   width: 100vw;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-screen-lg {
@@ -851,9 +826,9 @@ video {
   padding-right: 2.75rem;
 }
 
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .px-4 {
@@ -866,9 +841,9 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-\[8\%\] {
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .py-14 {
@@ -881,34 +856,18 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
 .pb-32 {
   padding-bottom: 8rem;
-}
-
-.pt-11 {
-  padding-top: 2.75rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .pt-3 {
@@ -935,8 +894,20 @@ video {
   font-family: Forum, sans-serif;
 }
 
+.font-sacramento {
+  font-family: Sacramento, sans-serif;
+}
+
 .font-saudagar {
   font-family: Saudagar, sans-serif;
+}
+
+.font-allison {
+  font-family: Allison, sans-serif;
+}
+
+.font-alex-brush {
+  font-family: Alex Brush, sans-serif;
 }
 
 .text-3xl {
@@ -1164,10 +1135,6 @@ video {
     width: 50%;
   }
 
-  .md\:w-\[85\%\] {
-    width: 85%;
-  }
-
   .md\:justify-start {
     justify-content: flex-start;
   }
@@ -1183,6 +1150,11 @@ video {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:px-4 {
@@ -1227,10 +1199,6 @@ video {
 @media (min-width: 1024px) {
   .lg\:min-h-screen {
     min-height: 100vh;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
   }
 
   .lg\:max-w-4xl {

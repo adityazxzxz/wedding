@@ -24,7 +24,10 @@ module.exports = {
         'custom3': ['custom3', 'sans-serif'],
         'saudagar': ['Saudagar', 'sans-serif'],
         'aerotis': ['Aerotis', 'sans-serif'],
-        'forum': ['Forum', 'sans-serif']
+        'forum': ['Forum', 'sans-serif'],
+        'sacramento': ['Sacramento', 'sans-serif'],
+        'alex-brush': ['Alex Brush', 'sans-serif'],
+        'allison': ['Allison', 'sans-serif'],
       },
       colors: {
         gold: {

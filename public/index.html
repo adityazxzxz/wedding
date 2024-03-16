@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allison&family=Forum&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/simplyCountdown.theme.default.css" />
+    <script src="js/simplyCountdown.min.js"></script>
+
 
     <style>
         html {
             scroll-behavior: smooth;
         }
-        .swiper-button-prev {
-    color: gray;
-    font-size: 20px;
-}
 
-.swiper-button-next {
-    color: gray ;
-    font-size: 20px;
-}
+        .swiper-button-prev {
+            color: gray;
+            font-size: 20px;
+        }
+
+        .swiper-button-next {
+            color: gray;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body class="overflow-y-hidden">
-        <section id="boarding" class="bg-[url('../images/interior-sephia-cropped-v2.png'),url('../images/hogwarts.jpg')] bg-cover bg-center fixed inset-0 flex justify-center items-center pt-3 pb-32 bg-slate-100 z-10">
-            <div class="flex items-center justify-center h-screen w-screen max-w-screen-lg">
-                <div class="container">
-                    <div class="border rounded-lg shadow-lg p-10 md:px-9 text-center bg-white bg-opacity-50 enter_2">
-                        <h2 class="text-sm font-semibold font-custom1 text-lime-900 mb-5 lg:text-lg ">WEDDING</h2>
-                        <h2 class="font-custom2 text-lime-900 mb-10 text-3xl md:text-5xl ">Tiger & Milly</h2>
-                        <div class="flex flex-wrap p-5 justify-center">
-                            <button id="show"
-                            class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3"><span class="text-xs md:text-sm">VIEW INVITATION</span></button>
+    <section id="boarding"
+        class="bg-[url('../images/interior-sephia-cropped-v2.png'),url('../images/hogwarts.jpg')] bg-cover bg-center fixed inset-0 flex justify-center items-center pt-3 pb-32 bg-slate-100 z-10">
+        <div class="flex items-center justify-center h-screen w-screen max-w-screen-lg">
+            <div class="container">
+                <div class="border rounded-lg shadow-lg p-10 md:px-9 text-center bg-white bg-opacity-50 enter_2">
+                    <h4 class="text-sm font-semibold font-custom1 text-lime-900 mb-10 lg:text-lg ">Kepada Prof. Tiger
+                        Maboy</h4>
+                    <h2 class="font-alex-brush text-lime-900 mb-10 text-5xl md:text-5xl ">Tiger & Milly</h2>
+                    <p class="font-custom1 font-semibold text-sm text-lime-900">Akan Melangsungkan Resepsi Pernikahan
+                        dalam:</p>
+                    <div class="w-full">
+                        <div class="simply-countdown">
                         </div>
-                        <!-- <iframe src="https://lottie.host/embed/946fe320-e4ab-47ad-9b24-0ccb129e2242/Cito4u3efM.json" class="text-center"></iframe> -->
                     </div>
+                    <div class="flex flex-wrap p-5 justify-center">
+                        <button id="show"
+                            class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3"><span
+                                class="text-xs md:text-sm">VIEW INVITATION</span></button>
+                    </div>
+
                 </div>
-        </section>
-    </div>
-    
+            </div>
+        </div>
+    </section>
+
 
     <section id="title" class=" bg-slate-100">
         <div class="flex items-center justify-center h-screen">
@@ -57,182 +73,213 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
-    <section id="bride" class="pt-16 pb-16 bg-slate-200">
-        
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h2 class="text-lime-900 font-saudagar text-5xl font-semibold mb-5">The Bride</h2>
-                </div>
-            </div>
+    <section id="bride" class="bg-slate-100 inset-0 py-20">
+        <div class="max-w-xl mx-auto text-center mb-16">
+            <h2 class="text-lime-900 font-saudagar text-5xl font-semibold mb-5">The Bride</h2>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="flex items-center justify-center max-w-5xl">
                 <div class="flex flex-wrap">
-                        <!-- Left Frame -->
-                        <div class="w-full md:px-4 md:w-1/2">
-                            <div class="mb-10 text-center md:rounded-3xl md:mr-5 py-14 px-28 w-full md:w-[85%] bg-white mx-auto ">
-                                <img class='rounded-full w-full mb-10' src="images/amber.jpg" alt='reliance' />
-                                <h4 class="font-custom2 text-gold-300 text-4xl lg:text-7xl mb-6">Tiger</h4>
-                                <h4 class="font-saudagar text-lime-900  font-semibold mb-6 text-xl lg:text-3xl ">Tiger Maboy</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl">Putra dari:</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl">Bpk Tiger</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl">&</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl mb-6">Ibu Milly</h4>
-                                <div class="flex items-center justify-center">
-                                    <a href="https://www.instagram.com/adityazxzxz/" target='_blank' class='w-9 h-9 border text-slate-300 rounded-full  hover:text-white hover:bg-primary'><svg role="img" width="36" length="36"  class='fill-current' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" /></svg>
-                            </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Right Frame -->
-                        <div class="w-full md:px-4 md:w-1/2">
-                            <div class="mb-10 text-center md:rounded-3xl md:ml-5 py-14 px-28 w-full md:w-[85%]  bg-white mx-auto">
-                                <img class='rounded-full w-full mb-10' src="images/amber.jpg" alt='reliance' />
-                                <h4 class="font-custom2 text-gold-300 text-4xl lg:text-7xl mb-6">Milly</h4>
-                                <h4 class="font-saudagar text-lime-900  font-semibold mb-6 text-xl lg:text-3xl ">Milly</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl">Putri dari:</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl">Bpk Tiger</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl">&</h4>
-                                <h4 class="font-saudagar text-base lg:text-xl mb-6">Ibu Milly</h4>
-                                <div class="flex items-center justify-center">
-                                    <a href="https://www.instagram.com/adityazxzxz/" target='_blank' class='w-9 h-9 border text-slate-300 rounded-full  hover:text-white hover:bg-primary'><svg role="img" width="36" length="36"  class='fill-current' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" /></svg>
-                            </a>
+                    <!-- Left Frame -->
+                    <div class="w-full md:px-4 md:w-1/2">
+                        <div
+                            class="mb-10 text-center md:rounded-3xl md:mr-5 py-14 px-14 md:px-16 w-full bg-white mx-auto ">
+                            <img class='rounded-full w-full mb-10' src="images/amber.jpg" alt='reliance' />
+                            <h4 class="font-custom2 text-gold-300 text-4xl lg:text-7xl mb-6">Tiger</h4>
+                            <h4 class="font-saudagar text-lime-900  font-semibold mb-6 text-xl lg:text-3xl ">Tiger Maboy
+                            </h4>
+                            <h4 class="font-saudagar text-base lg:text-xl">Putra dari:</h4>
+                            <h4 class="font-saudagar text-base lg:text-xl">Bpk Tiger</h4>
+                            <h4 class="font-saudagar text-base lg:text-xl">&</h4>
+                            <h4 class="font-saudagar text-base lg:text-xl mb-6">Ibu Milly</h4>
+                            <div class="flex items-center justify-center">
+                                <a href="https://www.instagram.com/adityazxzxz/" target='_blank'
+                                    class='w-9 h-9 border text-slate-300 rounded-full  hover:text-white hover:bg-primary'><svg
+                                        role="img" width="36" length="36" class='fill-current' viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Instagram</title>
+                                        <path
+                                            d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
-        
+
+                    <!-- Right Frame -->
+                    <div class="w-full md:px-4 md:w-1/2">
+                        <div
+                            class="mb-10 text-center md:rounded-3xl md:ml-5 py-14 px-14 md:px-16  w-full  bg-white mx-auto">
+                            <img class='rounded-full w-full mb-10' src="images/amber.jpg" alt='reliance' />
+                            <h4 class="font-custom2 text-gold-300 text-4xl lg:text-7xl mb-6">Milly</h4>
+                            <h4 class="font-saudagar text-lime-900  font-semibold mb-6 text-xl lg:text-3xl ">Milly</h4>
+                            <h4 class="font-saudagar text-base lg:text-xl">Putri dari:</h4>
+                            <h4 class="font-saudagar text-base lg:text-xl">Bpk Tiger</h4>
+                            <h4 class="font-saudagar text-base lg:text-xl">&</h4>
+                            <h4 class="font-saudagar text-base lg:text-xl mb-6">Ibu Milly</h4>
+                            <div class="flex items-center justify-center">
+                                <a href="https://www.instagram.com/adityazxzxz/" target='_blank'
+                                    class='w-9 h-9 border text-slate-300 rounded-full  hover:text-white hover:bg-primary'><svg
+                                        role="img" width="36" length="36" class='fill-current' viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Instagram</title>
+                                        <path
+                                            d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     <section id="landscape" class="flex justify-center items-center">
-        <div class="bg-[url('../images/landscape.jpeg')] bg-center bg-cover min-h-[480px] md:min-h-[720px] lg:min-h-screen w-full">
+        <div
+            class="bg-[url('../images/landscape.jpeg')] bg-center bg-cover min-h-[480px] md:min-h-[720px] lg:min-h-screen w-full">
         </div>
     </section>
-    <section id="information" class="bg-slate-500 inset-0 flex justify-center items-center py-10">
-        <div class="flex items-center justify-center w-full py-5 px-11 mt-28">
-                <div class="border rounded-2xl shadow-lg p-11 md:px-10 text-center bg-white bg-opacity-50 max-w-4xl lg:max-w-4xl">
-                    <h2 class="text-lime-700 text-sm font-bold font-saudagar mb-5 text-lg lg:text-2xl ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, cumque!</h2>
-                    <p class="font-forum text-lime-900 mb-10 text-base ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minima quasi quae accusantium aspernatur nesciunt alias voluptates veritatis vel unde.</p>
-                    
-                        <div class="flex flex-wrap">
-                            <div class="w-full md:w-1/2 flex justify-center md:justify-end md:pr-2">
-                                <div class="text-center bg-slate-100 w-full mx-auto rounded-3xl pt-11 pb-20 mb-10">
-                                    <h2 class="font-custom2 text-4xl mt-10">Akad Nikah</h2>
-                                    <h3 class="font-custom1 text-lg font-semibold my-4">MINGGU</h3>
-                                    <h3 class="font-custom1 text-lg font-semibold my-4">15 SEPTEMBER 2024</h3>
-                                    <h3 class="font-custom1 text-lg font-semibold my-4">10.00 WIB</h3>
-                                </div>
-                            </div>
-                            <div class="w-full md:w-1/2 flex justify-center md:justify-start md:pl-2">
-                                <div class="mx-2 text-center  bg-slate-100 w-full mx-auto rounded-3xl pt-11 pb-20 px-6 mb-10">
-                                    <h2 class="font-custom2 text-4xl mt-10">Resepsi</h2>
-                                    <h3 class="font-custom1 text-lg  font-semibold my-4">MINGGU</h3>
-                                    <h3 class="font-custom1 text-lg  font-semibold my-4">15 SEPTEMBER 2024</h3>
-                                    <h3 class="font-custom1 text-lg  font-semibold my-4">11.00 WIB</h3>
-                                    <h3 class="font-custom1 text-lg  font-bold my-4">HOTEL DES INDES MENTENG</h3>
-                                    <p class="font-custom1 italic my-4">Jl. HOS. Cokroaminoto No.84 - 86, RT.3/RW.5, Menteng, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10310</p>
-                                    <button id="show"
-                                class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3 my-4"><span class="text-xs md:text-sm">SHOW LOCATION</span></button>
-                                <p class="my-4 italic font-custom1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia error quibusdam voluptas nam. Exercitationem, eos?</p>
-                                <p class="my-4 italic font-custom1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium necessitatibus, soluta saepe nulla officiis autem eius aut assumenda non unde.</p>
-                                <p class="my-4 italic font-custom1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolorum sit voluptates incidunt laborum nostrum quaerat odit consequuntur cupiditate est.</p>
-                                <button id="show"
-                                class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3 my-4"><span class="text-xs md:text-sm">VIEW INVITATION</span></button>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    <!-- <iframe src="https://lottie.host/embed/946fe320-e4ab-47ad-9b24-0ccb129e2242/Cito4u3efM.json"></iframe> -->
-                </div>
-</section>
-<section id="message" class="pt-36 pb-32">
-    <div class="w-full px-4">
-        <div class="flex items-center justify-center w-full py-5 px-11 mt-28">
-            <div class="border rounded-2xl shadow-lg p-11 md:px-10 bg-white bg-opacity-50 max-w-4xl lg:max-w-4xl">
-                <h2 class="text-center text-lime-700 font-semibold font-saudagar mb-5 text-4xl lg:text-2xl ">Lorem ipsum dolor sit amet.</h2>
-                <p class="text-center text-lime-900 mb-10 text-base font-saudagar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minima quasi quae accusantium aspernatur nesciunt alias voluptates veritatis vel unde.</p>
-                <form action="">
-                    <div class="w-full px-4 mb-8">
-                        <label for="name" class="text-base text-slate-600">Name</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-300 focus:border-red-400">
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="message" class="text-base text-slate-600">Message</label>
-                        <textarea type="text" id="message" class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-300 focus:border-red-400"></textarea>
-                    </div>
-                    <div class="w-full px-4">
-                        <button id="show" class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-lg transition duration-500 ease-in-out hover:-translate-y-3 my-4 w-full"><span class="text-sm">KIRIM</span></button>
-                    </div>
-                </form>
-                
-            </div>
-    </div>
-</section>
-<section id="gift" class="pt-36 pb-32 bg-lime-200">
-    <div class="w-full px-4">
-        <div class="flex items-center justify-center w-full py-5 px-11">
-            <div class="border rounded-2xl shadow-lg p-11 md:px-10 bg-white bg-opacity-50 max-w-4xl lg:max-w-4xl">
-                <h2 class="text-center text-lime-700 font-semibold font-saudagar mb-5 text-4xl lg:text-2xl ">Lorem ipsum dolor sit amet.</h2>
-                <p class="text-center font-forum text-lime-900 mb-10 text-base ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, sapiente consequatur? Nobis fuga sequi amet, asperiores atque eum temporibus quo quam accusamus explicabo nisi vel.</p>
-                <div class="w-full flex justify-center">
-                    <button id="show" class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-lg transition duration-500 ease-in-out hover:-translate-y-3 my-4 w-[30%]"><span class="text-sm">KIRIM</span></button>
-                </div>
-                
-            </div>
-    </div>
-</section>
-<section id="gallery">
-    <!-- <div class="px-20 lg:w-1/2">
-    <div class="relative my-8">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/landscape.jpeg" alt=""></div>
-                <div class="swiper-slide"><img src="images/landscape.jpeg" alt=""></div>
-                <div class="swiper-slide"><img src="images/landscape.jpeg" alt=""></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev absolute left-0 top-0 mt-4"></div>
-            <div class="swiper-button-next absolute right-0 top-0 mt-4"></div>
-        </div>
-    </div> -->
-</div>
 
-    <!-- Second Slider -->
-    <!-- <div class="relative my-8">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide A</div>
-                <div class="swiper-slide">Slide B</div>
-                <div class="swiper-slide">Slide C</div>
+    <!-- playground -->
+    <section id="information" class="bg-slate-500 inset-0 flex justify-center items-center py-20 px-[8%]">
+        <div class="flex items-center justify-center max-w-5xl">
+            <div class="border rounded-2xl shadow-lg text-center bg-white bg-opacity-50 px-[8%]">
+                <h2 class="text-lime-700 text-sm font-bold font-saudagar text-lg lg:text-2xl ">Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Fugit, cumque!</h2>
+                <p class="font-forum text-lime-900 mb-10 text-base ">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Natus minima quasi quae accusantium aspernatur nesciunt alias voluptates veritatis vel unde.
+                </p>
+
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 flex justify-center md:justify-end md:pr-2">
+                        <div class="text-center bg-slate-100 w-full mx-auto rounded-3xl">
+                            <h2 class="font-custom2 text-4xl mt-10">Akad Nikah</h2>
+                            <h3 class="font-custom1 text-lg font-semibold my-4">MINGGU</h3>
+                            <h3 class="font-custom1 text-lg font-semibold my-4">15 SEPTEMBER 2024</h3>
+                            <h3 class="font-custom1 text-lg font-semibold my-4">10.00 WIB</h3>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center md:justify-start md:pl-2">
+                        <div class="text-center  bg-slate-100 w-full mx-auto rounded-3xl">
+                            <h2 class="font-custom2 text-4xl mt-10">Resepsi</h2>
+                            <h3 class="font-custom1 text-lg  font-semibold my-4">MINGGU</h3>
+                            <h3 class="font-custom1 text-lg  font-semibold my-4">15 SEPTEMBER 2024</h3>
+                            <h3 class="font-custom1 text-lg  font-semibold my-4">11.00 WIB</h3>
+                            <h3 class="font-custom1 text-lg  font-bold my-4">HOTEL DES INDES MENTENG</h3>
+                            <p class="font-custom1 italic my-4">Jl. HOS. Cokroaminoto No.84 - 86, RT.3/RW.5, Menteng,
+                                Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10310</p>
+                            <button id="show"
+                                class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3 my-4"><span
+                                    class="text-xs md:text-sm">SHOW LOCATION</span></button>
+                            <p class="my-4 italic font-custom1">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Officia error quibusdam voluptas nam. Exercitationem, eos?</p>
+                            <p class="my-4 italic font-custom1">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit. Accusantium necessitatibus, soluta saepe nulla officiis autem eius aut assumenda
+                                non unde.</p>
+                            <p class="my-4 italic font-custom1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Praesentium dolorum sit voluptates incidunt laborum nostrum quaerat odit consequuntur
+                                cupiditate est.</p>
+                            <button id="show"
+                                class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-500 ease-in-out hover:-translate-y-3 my-4"><span
+                                    class="text-xs md:text-sm">VIEW INVITATION</span></button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <iframe src="https://lottie.host/embed/946fe320-e4ab-47ad-9b24-0ccb129e2242/Cito4u3efM.json"></iframe> -->
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev absolute left-0 top-0 mt-4"></div>
-            <div class="swiper-button-next absolute right-0 top-0 mt-4"></div>
-        </div>
-    </div> -->
-    
-</section>
+    </section>
+
+    <section id="message" class="pt-36 pb-32">
+        <div class="w-full px-4">
+            <div class="flex items-center justify-center w-full py-5 px-11 mt-28">
+                <div class="border rounded-2xl shadow-lg p-11 md:px-10 bg-white bg-opacity-50 max-w-4xl lg:max-w-4xl">
+                    <h2 class="text-center text-lime-700 font-semibold font-saudagar mb-5 text-4xl lg:text-2xl ">Lorem
+                        ipsum dolor sit amet.</h2>
+                    <p class="text-center text-lime-900 mb-10 text-base font-saudagar">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Natus minima quasi quae accusantium aspernatur nesciunt alias
+                        voluptates veritatis vel unde.</p>
+                    <form action="">
+                        <div class="w-full px-4 mb-8">
+                            <label for="name" class="text-base text-slate-600">Name</label>
+                            <input type="text" id="name"
+                                class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-300 focus:border-red-400">
+                        </div>
+                        <div class="w-full px-4 mb-8">
+                            <label for="message" class="text-base text-slate-600">Message</label>
+                            <textarea type="text" id="message"
+                                class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-300 focus:border-red-400"></textarea>
+                        </div>
+                        <div class="w-full px-4">
+                            <button id="show"
+                                class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-lg transition duration-500 ease-in-out hover:-translate-y-3 my-4 w-full"><span
+                                    class="text-sm">KIRIM</span></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+    </section>
+    <section id="gift" class="pt-36 pb-32 bg-lime-200">
+        <div class="w-full px-4">
+            <div class="flex items-center justify-center w-full py-5 px-11">
+                <div class="border rounded-2xl shadow-lg p-11 md:px-10 bg-white bg-opacity-50 max-w-4xl lg:max-w-4xl">
+                    <h2 class="text-center text-lime-700 font-semibold font-saudagar mb-5 text-4xl lg:text-2xl ">Lorem
+                        ipsum dolor sit amet.</h2>
+                    <p class="text-center font-forum text-lime-900 mb-10 text-base ">Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Quam, sapiente consequatur? Nobis fuga sequi amet, asperiores
+                        atque eum temporibus quo quam accusamus explicabo nisi vel.</p>
+                    <div class="w-full flex justify-center">
+                        <button id="show"
+                            class="text-white bg-gradient-to-r from-gold-300 to-moss-300 py-2 px-6 md:py-3 md:px-8 rounded-lg transition duration-500 ease-in-out hover:-translate-y-3 my-4 w-[30%]"><span
+                                class="text-sm">KIRIM</span></button>
+                    </div>
+
+                </div>
+            </div>
+    </section>
     <script>
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
 
-        function hide(){
-            boarding.classList.toggle('hidden') 
-                text_title.classList.toggle('hidden')
-                text_title.classList.toggle('enter_5')
-                document.getElementById('audio_player').play()
-                body.classList.toggle('overflow-y-hidden')
+        function hide() {
+            boarding.classList.toggle('hidden')
+            text_title.classList.toggle('hidden')
+            text_title.classList.toggle('enter_5')
+            document.getElementById('audio_player').play()
+            body.classList.toggle('overflow-y-hidden')
         }
 
         const body = document.querySelector('body')
         const text_title = document.querySelector('#text-title')
         const boarding = document.querySelector('#boarding')
-        document.getElementById('show').addEventListener('click',function(){
+        document.getElementById('show').addEventListener('click', function () {
             boarding.classList.toggle('exit_1')
-            sleep(1000).then(() => { 
+            sleep(1000).then(() => {
                 hide()
             });
-            
-      })
+
+        })
+    </script>
+    <script>
+        simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 6, // required
+            day: 28, // required
+            hours: 0, // Default is 0 [0-23] integer
+            minutes: 0, // Default is 0 [0-59] integer
+            seconds: 0, // Default is 0 [0-59] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'day', plural: 'days' },
+                hours: { singular: 'hour', plural: 'hours' },
+                minutes: { singular: 'minute', plural: 'minutes' },
+                seconds: { singular: 'second', plural: 'seconds' }
+            },
+        })
     </script>
     <audio id="audio_player" loop src="sound/potter_waltz.mp3" type="audio/mpeg">
     </audio>
