@@ -180,8 +180,7 @@
     </div>
 </section>
 <section id="gallery">
-    <div class="px-20 lg:w-1/2">
-        <!-- First Slider -->
+    <!-- <div class="px-20 lg:w-1/2">
     <div class="relative my-8">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -193,7 +192,7 @@
             <div class="swiper-button-prev absolute left-0 top-0 mt-4"></div>
             <div class="swiper-button-next absolute right-0 top-0 mt-4"></div>
         </div>
-    </div>
+    </div> -->
 </div>
 
     <!-- Second Slider -->
@@ -211,7 +210,6 @@
     </div> -->
     
 </section>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
@@ -235,28 +233,6 @@
             });
             
       })
-    </script>
-    <script>
-        // Initialize Swiper instances for each slider
-        const sliders = document.querySelectorAll('.swiper-container');
-
-        sliders.forEach(slider => {
-            const swiper = new Swiper(slider, {
-                loop: true,
-                autoplay: {
-                    delay: 3000, // Change autoplay delay as needed
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        });
     </script>
     <audio id="audio_player" loop src="sound/potter_waltz.mp3" type="audio/mpeg">
     </audio>
