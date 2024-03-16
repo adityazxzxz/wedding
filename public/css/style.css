@@ -809,6 +809,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/images\/hogwarts\.jpg\'\)\] {
+  background-image: url('../images/hogwarts.jpg');
+}
+
 .from-gold-300 {
   --tw-gradient-from: #d2ab67 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(210 171 103 / 0) var(--tw-gradient-to-position);
