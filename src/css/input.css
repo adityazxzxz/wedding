@@ -3,61 +3,61 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'custom1';
-    src: local('custom1'), url(../fonts/custom-1.woff2) format('woff2');
-  }
+  font-family: "custom1";
+  src: local("custom1"), url(../fonts/custom-1.woff2) format("woff2");
+}
 
-  @font-face {
-    font-family: 'custom2';
-    src: local('custom2'), url(../fonts/custom-2.woff2) format('woff2');
-  }
+@font-face {
+  font-family: "custom2";
+  src: local("custom2"), url(../fonts/custom-2.woff2) format("woff2");
+}
 
-  @font-face {
-    font-family: 'custom3';
-    src: local('custom3'), url(../fonts/custom-3.ttf) format('ttf');
-  }
+@font-face {
+  font-family: "custom3";
+  src: local("custom3"), url(../fonts/custom-3.ttf) format("ttf");
+}
 
-  @font-face {
-    font-family: 'Saudagar';
-    src: local('Saudagar'), url(../fonts/Saudagar.woff2) format('woff2');
-  }
+@font-face {
+  font-family: "Saudagar";
+  src: local("Saudagar"), url(../fonts/Saudagar.woff2) format("woff2");
+}
 
-  @font-face {
-    font-family: 'Aerotis';
-    src: local('Aerotis'), url(../fonts/Aerotis.woff2) format('woff2');
-  }
+@font-face {
+  font-family: "Aerotis";
+  src: local("Aerotis"), url(../fonts/Aerotis.woff2) format("woff2");
+}
 
-  @font-face {
-    font-family: 'Forum';
-    src: local('Forum'), url(../fonts/Forum.woff2) format('woff2');
-  }
+@font-face {
+  font-family: "Forum";
+  src: local("Forum"), url(../fonts/Forum.woff2) format("woff2");
+}
 
-  @keyframes alt-pop-enter {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes alt-pop-enter {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
-  @keyframes alt-pop-exit {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+@keyframes alt-pop-exit {
+  0% {
+    opacity: 1;
   }
-  
-  .enter_2 {
-    animation: alt-pop-enter 2s;
+  100% {
+    opacity: 0;
   }
+}
 
-  .enter_5 {
-    animation: alt-pop-enter 5s;
-  }
+.enter_2 {
+  animation: alt-pop-enter 2s;
+}
 
-  .exit_1 {
-    animation: alt-pop-exit 1s;
-  }
+.enter_5 {
+  animation: alt-pop-enter 5s;
+}
+
+.exit_1 {
+  animation: alt-pop-exit 1s;
+}
