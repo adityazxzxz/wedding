@@ -799,6 +799,10 @@ video {
   background-image: url('../images/theme/hogwarts/boarding-background.png');
 }
 
+.bg-\[url\(\'\.\.\/images\/theme\/hogwarts\/boarding-background\.jpg\'\)\] {
+  background-image: url('../images/theme/hogwarts/boarding-background.jpg');
+}
+
 .from-gold-300 {
   --tw-gradient-from: #d2ab67 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(210 171 103 / 0) var(--tw-gradient-to-position);
