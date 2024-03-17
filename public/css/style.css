@@ -763,20 +763,40 @@ video {
   --tw-bg-opacity: 0.7;
 }
 
-.bg-\[url\(\'\.\.\/images\/landscape\.jpeg\'\)\] {
-  background-image: url('../images/landscape.jpeg');
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
 }
 
-.bg-\[url\(\'\.\.\/images\/landscape\.jpg\'\)\] {
-  background-image: url('../images/landscape.jpg');
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
+.bg-\[url\(\'\.\.\/images\/amber\.jpg\'\)\] {
+  background-image: url('../images/amber.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/landscape\.jpeg\'\)\] {
+  background-image: url('../images/landscape.jpeg');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\.\.\/images\/amber\.jpg\'\)\] {
-  background-image: url('../images/amber.jpg');
+.bg-\[url\(\'\.\.\/images\/hogwarts\.jpg\'\)\] {
+  background-image: url('../images/hogwarts.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/hogwarts\.png\'\)\] {
+  background-image: url('../images/hogwarts.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/theme\/boarding-background\.png\'\)\] {
+  background-image: url('../images/theme/boarding-background.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/theme\/hogwarts\/boarding-background\.png\'\)\] {
+  background-image: url('../images/theme/hogwarts/boarding-background.png');
 }
 
 .from-gold-300 {
@@ -791,6 +811,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-center {
